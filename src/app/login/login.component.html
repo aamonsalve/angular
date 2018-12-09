@@ -1,0 +1,34 @@
+<body>
+<h1 class="header">Inicie Sesion</h1>
+<div class="container">
+  <div class="row" id="contendor" >
+    <div class="col-md-6 col-md-offset-3">
+      <form [formGroup]="loginForm">
+        <div class="form-group">
+          <label>Correo Electronico</label>
+          <input type="email" formControlName="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" class="form-control" formControlName="password">
+          <label class="error">{{errorMessage}}</label>
+        </div>
+        <button type="submit" (click)="tryLogin(loginForm.value)" class="btn btn-default">Iniciar Sesion</button>
+      </form>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <button type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()" >Iniciar sesion con Google</button>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <p>¿No tienes cuenta? <a href="/registrar">Crear Cuenta</a></p>
+    </div>
+  </div>
+</div>
+
+</body>

@@ -1,0 +1,23 @@
+img{
+    height: 500px;
+   
+}
+#carouselExampleIndicators{
+    width: 75%;
+   margin-left: 12%;
+}
+h5{color:rgb(255, 57, 57);}
+p{color:white;}
+h1{color: white;
+    
+ text-align: center;}
+ 
+ #prueba{height: 50%;
+width: 33%;
+margin-left: 12%;
+background: #574e4c !important;}
+#prueba2{height: 50%;
+    width: 33%;
+    margin-left: 54%;
+margin-top: -33%;
+background: #574e4c !important;}
